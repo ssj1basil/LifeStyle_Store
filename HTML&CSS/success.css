@@ -21,14 +21,41 @@ div.navbar-collapse
     background-color: black !important;
 }
  
-
 .container
 {
-    margin-top: 5%; 
+    margin-top: 4%;
 }
-.blank-row > td, .blank-row > th, .blank-row > tr
+
+.jumbotron
 {
-    padding: 0em;
+    background-color: #ccdeff;
+    padding-top: 4%;
+}
+
+.clock-icon
+{
+    font-size: 60px;
+}
+
+.order-title
+{
+    vertical-align: middle;
+}
+
+.order-subtext
+{
+    padding-top: 1%;
+    padding-left: 8%;
+}
+
+.order-endtext
+{
+    margin-left: 8%;
+}
+
+a
+{
+    color: black;
 }
 
 .footer

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="carts.css">
+        <link rel="stylesheet" type="text/css" href="success.css">
     </head>
 
     <body>
@@ -24,7 +24,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link" href="carts.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+                        <li class="nav-item "><a class="nav-link" href="carts.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
                         <li  class="nav-item " ><a class="nav-link" href="settings.html"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
                         <li  class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
                     </ul>
@@ -32,36 +32,15 @@
             </div>
         </nav>  
 
-
-        <div class="container table-responsive">
-            <table class="table">
-                <thead class="thead-light">
-                    <tr>
-                        <th scope="col">Item Number</th>
-                        <th scope="col">Item Name</th>
-                        <th scope="col">Price</th>
-                        <th scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="blank-row">
-                        <th scope="row"></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td></td>
-                        <td>Total</td>
-                        <td>Rs 0</td>
-                        <td><a href="success.html" class="btn btn-primary">Confirm Order</a></td>
-                    </tr>
-                </tfoot>
-            </table>
+        <div class="container">
+            <div class="jumbotron">
+                    <h1 class="order-title fa fa-clock-o clock-icon" aria-hidden="true"> Order Confirmed</h1>  
+                    <h3 class="order-subtext fa5-$">Delivery time: Never</h3>  
+                    <br>
+                    <p class="order-endtext">Thank you for shopping with us. <a href="products.html"><u>Click here</u></a> to purchase any other item.</p>
+            </div>
         </div>
-    
+
     </body>
 
     <div class="footer">
