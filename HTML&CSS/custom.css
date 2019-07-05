@@ -20,7 +20,7 @@ div.navbar-collapse
     padding-bottom: 155px;
     text-align: center;
     color: #f8f8f8;
-    background: url(./Images/intro-bg_1.jpg) no-repeat center center;
+    background: url(../Images/intro-bg_1.jpg) no-repeat center center;
     background-size: cover;
 }
 
