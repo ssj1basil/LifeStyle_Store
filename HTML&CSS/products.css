@@ -8,7 +8,7 @@ body
 {
     position: relative;
     margin: 0;
-    padding-bottom: 36rem;
+    padding-bottom: 6rem;
 }
 
 div.navbar-collapse
@@ -37,6 +37,23 @@ div.jumbotron > h1
 div.jumbotron >p
 {
     font-weight: lighter;
+}
+
+.row
+{
+    justify-content: center;
+}
+
+.card
+{
+    padding: 5px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.card-title
+{
+    font-weight: bold;  
 }
 
 .footer
