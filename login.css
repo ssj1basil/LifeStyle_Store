@@ -1,0 +1,89 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+body
+{
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+
+}
+div.navbar-collapse
+{
+    flex-grow: 0;
+}
+
+.bg-dark
+{
+    background-color: black !important;
+}
+
+
+.bg-primary
+{
+    background-color: #6ab9ff !important;
+}
+
+.text-warning
+{
+    color: #e88f19!important;
+}
+div.Login
+{
+    margin-top: 6%;
+    width: 25%;
+    height: 50%;
+    margin-bottom: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header
+{
+    font-size: 30px;
+    font-weight: 540;
+}   
+
+.card-title
+{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.card-footer a
+{
+    font-size: 18px;
+}
+
+.btn-outline-primary
+{
+    color: black;
+}
+
+.btn-outline-primary:hover {
+    color: black;
+    background-color: #66b2f4;
+    border-color: #007bff;
+}
+
+.footer
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color:black;
+    text-align: center;
+}
+
+.footer-info
+{
+    margin-bottom: 2px;
+    color: #FFFFFF;
+    text-align: center;
+}
+  

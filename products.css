@@ -1,0 +1,59 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    position: relative;
+    margin: 0;
+    padding-bottom: 36rem;
+}
+
+div.navbar-collapse
+{
+    flex-grow: 0;
+}
+
+.bg-dark
+{
+    background-color: black !important;
+}
+
+div.jumbotron
+{
+    margin: 20px 0;
+    padding: 40px;
+    background-color: #a5a5a5;
+}
+
+div.jumbotron > h1
+{
+    font-weight: bold;
+    font-size: 55px;
+}
+
+div.jumbotron >p
+{
+    font-weight: lighter;
+}
+
+.footer
+{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;  
+    padding: 1rem;
+    background-color: black;
+    text-align: center;
+}
+
+.footer-info
+{
+    margin-bottom: 11px;
+    color: #FFFFFF;
+    text-align: center;
+}
+  

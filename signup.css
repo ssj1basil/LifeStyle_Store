@@ -1,0 +1,77 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    position: relative;
+    margin: 0;
+    padding-bottom: 20.1rem;
+}
+
+div.navbar-collapse
+{
+    flex-grow: 0;
+}
+
+.bg-dark
+{
+    background-color: black !important;
+}
+
+.container-form
+{
+    margin-top: 8%;;
+    justify-content: center;
+    text-align: center;
+}
+
+form , .form-group, .card-body
+{
+    max-width: fit-content;
+}
+
+.card-body
+{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.form-title
+{
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+input.form-control
+{
+    width: 350px;
+}
+
+.submit-btn
+{
+    text-align: left;
+    justify-content: left;
+}
+
+
+.footer
+{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;  
+    padding: 1rem;
+    background-color: black;
+    text-align: center;
+}
+
+.footer-info
+{
+    margin-bottom: 11px;
+    color: #FFFFFF;
+    text-align: center;
+}
+  
