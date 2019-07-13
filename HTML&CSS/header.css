@@ -1,0 +1,15 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+div.navbar-collapse
+{
+    flex-grow: 0;
+}
+
+.bg-dark
+{
+    background-color: black !important;
+}

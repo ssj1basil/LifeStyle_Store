@@ -9,6 +9,7 @@ div.navbar-collapse
     flex-grow: 0;
 }
 
+
 .bg-dark
 {
     background-color: black !important;
@@ -36,7 +37,6 @@ div.navbar-collapse
     background-color: rgba(0, 0, 0, 0.7);
     max-width: 660px;
 }
-
 
 p#product-placement {
     font-family: cursive;
