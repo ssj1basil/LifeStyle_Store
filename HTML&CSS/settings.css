@@ -30,6 +30,7 @@ div.navbar-collapse
 
 form , .form-group, .card-body
 {
+    max-width: -moz-max-content;
     max-width: fit-content;
 }
 

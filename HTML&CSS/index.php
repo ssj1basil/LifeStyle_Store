@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php include'common.php';
+if (isset($_SESSION['email'])) {
+    header('location: products.php');}
+    
+?>
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -13,21 +18,23 @@
 
     <style>
     <?php
-    <?php
             include '../bootstrap/bootstrap.min.css';
             include 'custom.css';?>
-    ?>
     </style>
-    
+
     <?php
-        include'header.php'
+        session_start();
+        include'header.php';
         ?>
-            
-    <div class="banner-image-container">
+ 
+    
+
+
+    <div class="banner-image-container"s>
         <div class="container">
             <div class="banner-content">
                     <p id="product-placement" class="deepshadow">We Sell LifeStyle</p> 
-                <a href="products.html" class="btn btn-danger btn-lg active">Shop Now</a>
+                <a href="products.php" class="btn btn-danger btn-lg active">Shop Now</a>
             </div>
         </div>
     </div>

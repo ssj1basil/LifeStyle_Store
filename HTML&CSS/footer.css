@@ -1,0 +1,20 @@
+footer
+{
+    bottom: 0px;
+    right: 0;
+    left: 0;
+}
+footer .container-fluid
+{
+    padding: 10px 0px;
+    overflow-wrap: normal;
+    background-color: black;
+
+}
+.footer-info
+{
+    margin-bottom: 11px;
+    color: #FFFFFF;
+    text-align: center;
+}
+  

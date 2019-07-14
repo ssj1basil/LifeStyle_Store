@@ -28,8 +28,13 @@ div.navbar-collapse
     text-align: center;
 }
 
-form , .form-group, .card-body
+li#signup
 {
+    color: #FFFFFF;
+}
+form , .form-group  , .card-body
+{
+    max-width: -moz-max-content;
     max-width: fit-content;
 }
 

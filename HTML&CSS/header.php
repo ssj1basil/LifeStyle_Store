@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -17,10 +16,15 @@
             include 'header.css';?>
     </style>
 
+    <?php
+        session_start();
+        include'common.php';?>
+    
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">LifeStyle Store</a> 
+                <a class="navbar-brand" href="index.php">LifeStyle Store</a> 
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
              
@@ -30,17 +34,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                         <?php
+                        session_start();
                         if (isset($_SESSION['email'])) {
                         ?>
-                            <li class="nav-item"><a class="nav-link" href = "cart.php"><span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span> Cart </a></li>
-                            <li class="nav-item"><a class="nav-link" href = "settings.php"><span><i class="fa fa-cog" aria-hidden="true"></i></span> Settings</a></li>
-                            <li class="nav-item"><a class="nav-link" href = "logout_script.php"><span><i class="fa fa-sign-out" aria-hidden="true"></i></span> Logout</a></li>
+                            <li class="nav-item" id="cart"><a class="nav-link" href = "carts.php"><span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span> Cart </a></li>
+                            <li class="nav-item" id="settings"><a class="nav-link" href = "settings.php"><span><i class="fa fa-cog" aria-hidden="true"></i></span> Settings</a></li>
+                            <li class="nav-item" id="logout"><a class="nav-link" href = "logout_script.php"><span><i class="fa fa-sign-out" aria-hidden="true"></i></span> Logout</a></li>
                 
                         <?php
                         } else {
                         ?>
-                        <li class="nav-item"><a class="nav-link" href="signup.php"><span><i class="fa fa-user" aria-hidden="true"></i></span> Sign Up</a></li>
-                        <li class="nav-item"><a  class="nav-link" href="login.php"><span><i class="fa fa-sign-in" aria-hidden="true"></i></span>Login</a></li>
+                        <li class="nav-item" id="signup"><a class="nav-link" href="signup.php"><span><i class="fa fa-user" aria-hidden="true"></i></span> Sign Up</a></li>
+                        <li class="nav-item" id="login"><a  class="nav-link" href="login.php"><span><i class="fa fa-sign-in" aria-hidden="true"></i></span>Login</a></li>
                         <?php
                         }
                         ?>
