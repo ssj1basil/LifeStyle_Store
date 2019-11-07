@@ -69,9 +69,15 @@ if (isset($_SESSION['email'])) {
                 <div class="form-group">
                         <input type="tel" name="address" class="form-control input-lg"  placeholder="Address">
                 </div>
+                <div class="form-group">
+                    <select class="form-control" name="type">
+                        <option value="Buyer">Buyer</option>
+                        <option value="Supplier">Supplier</option>
+                    </select>
+                </div>
 
             <div class="submit-btn">
-            <input type="submit" value="Submit" class="btn btn-primary btn-md" id="Submit"></input>
+                <input type="submit" value="Submit" class="btn btn-primary btn-md" id="Submit"></input>
             </div>
             </form>
         </div>

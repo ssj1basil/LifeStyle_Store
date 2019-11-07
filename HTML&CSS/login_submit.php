@@ -1,37 +1,56 @@
-<?php include'common.php'?>
+<?php include 'common.php' ?>
 <html>
-    <body>
-        <?php
 
-            $con = @mysqli_connect("localhost","admin","admin","Store") or 
-            die(mysqli_error($con));
+<body>
+    <?php
 
-            $email=$_POST['email'];
-            $password=md5($_POST['password']);
+    $con = @mysqli_connect("localhost", "admin", "admin", "Store") or
+        die(mysqli_error($con));
 
-            $fetch_id= "SELECT id FROM users WHERE users.email= '$email' AND users.password= '$password'";
-            $fetch_id_result = mysqli_query($con,$fetch_id) or die(mysqli_error($con));
-            $total_rows = mysqli_num_rows($fetch_id_result);
-            $row= mysqli_fetch_array($fetch_id_result);
+    $email = $_POST['email'];
+    $password = md5($_POST['password']);
 
-            
-            if($total_rows <= 0)
-            {
-                echo 'Wrong Credentials';
+    $fetch_id = "SELECT id FROM users WHERE users.email= '$email' AND users.password= '$password'";
+    $fetch_id_result = mysqli_query($con, $fetch_id) or die(mysqli_error($con));
+    $total_rows = mysqli_num_rows($fetch_id_result);
+    $row = mysqli_fetch_array($fetch_id_result);
+
+
+    if ($total_rows <= 0) {
+
+
+        $fetch_id = "SELECT supplier_id FROM Supplier WHERE Supplier.email= '$email' AND Supplier.password= '$password'";
+        $fetch_id_result = mysqli_query($con, $fetch_id) or die(mysqli_error($con));
+        $total_rows = mysqli_num_rows($fetch_id_result);
+        $row = mysqli_fetch_array($fetch_id_result);
+
+        if ($total_rows <= 0) {
+
+            echo 'Wrong Credentials';
+        } else {
+
+            echo $fetch_id;
+
+            session_start();
+            $_SESSION['supplier'] = $row[0];
+            $_SESSION['email'] = 'true';
+
+            if (isset($_SESSION['supplier'])) {
+                header('location: supplier.php');
             }
-            else
-            {
-                echo $fetch_id;
+        }
+    } else {
+        echo $fetch_id;
 
-                session_start();
-                $_SESSION['user']=$row[0];
-                $_SESSION['email']='true';
+        session_start();
+        $_SESSION['user'] = $row[0];
+        $_SESSION['email'] = 'true';
 
-                if (isset($_SESSION['user'])) {
-                    header('location: products.php');
-                    }
-                
-            }
-        ?>
-    </body>
+        if (isset($_SESSION['user'])) {
+            header('location: products.php');
+        }
+    }
+    ?>
+</body>
+
 </html>

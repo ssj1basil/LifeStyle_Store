@@ -1,22 +1,17 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
 }
 
-div.navbar-collapse
-{
+div.navbar-collapse {
     flex-grow: 0;
 }
 
-
-.bg-dark
-{
+.bg-dark {
     background-color: black !important;
 }
 
-.banner-image-container
-{
+.banner-image-container {
     padding-top: 155px;
     padding-bottom: 155px;
     text-align: center;
@@ -25,8 +20,7 @@ div.navbar-collapse
     background-size: cover;
 }
 
-.banner-content
-{
+.banner-content {
     position: relative;
     padding-top: 6%;
     padding-bottom: 6%;
@@ -46,33 +40,26 @@ p#product-placement {
     text-rendering: optimizeLegibility;
 }
 
-  .deepshadow {
+.deepshadow {
     color: #e0dfdc;
     letter-spacing: 0.02em;
-    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c,
-      0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424,
-      0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c,
-      0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414,
-      0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
 }
 
-footer
-{
+footer {
     bottom: 0px;
     right: 0;
     left: 0;
 }
-footer .container-fluid
-{
+
+footer .container-fluid {
     padding: 10px 0px;
     overflow-wrap: normal;
     background-color: black;
-
 }
-.footer-info
-{
+
+.footer-info {
     margin-bottom: 11px;
     color: #FFFFFF;
     text-align: center;
 }
-  

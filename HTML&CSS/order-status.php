@@ -35,6 +35,7 @@ if (!isset($_SESSION['email'])) {
                     <th scope="col">Item Name</th>
                     <th scope="col">Price</th>
                     <th scope="col">Quantity</th>
+                    <th scope="col">Status</th>
                     <th scope="col"></th>
                 </tr>
             </thead>
@@ -45,8 +46,8 @@ if (!isset($_SESSION['email'])) {
 
                 $sum = 0;
                 $user_id = $_SESSION['user'];
-                $get_items_query = "SELECT users_items.item_id,items.name,items.price,users_items.Quantity FROM users_items INNER JOIN items ON users_items.item_id= items.id 
-                    WHERE users_items.user_id='$user_id' AND users_items.status='Added to cart'";
+                $get_items_query = "SELECT users_items.item_id,items.name,items.price,users_items.Quantity,users_items.status FROM users_items INNER JOIN items ON users_items.item_id= items.id 
+                    WHERE users_items.user_id='$user_id'    ";
                 $get_items_result = mysqli_query($con, $get_items_query) or die(mysqli_error($con));
                 $total_rows = mysqli_num_rows($get_items_result);
 
@@ -60,7 +61,7 @@ if (!isset($_SESSION['email'])) {
                         echo "<td>", $row_info[1], "</td>";
                         echo "<td>", $row_info[2], "</td>";
                         echo "<td>", $row_info[3], "</td>";
-                        echo "<td><a href='cart-remove.php?id={$row_info[0]}'>Remove</a></td>";
+                        echo "<td>", $row_info[4], "</td>";
                         echo "</tr>";
                         $sum += $row_info[2] * $row_info[3];
                     }
@@ -74,7 +75,7 @@ if (!isset($_SESSION['email'])) {
                     <td>Total</td>
                     <?php
                     echo "<td>", $sum, "</td>";
-                    echo "<td><a href='success.php' class=\"btn btn-primary\" >Confirm Order</a></td>"; ?>
+                    ?>
                 </tr>
             </tfoot>
         </table>
